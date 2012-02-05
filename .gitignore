@@ -1,5 +1,8 @@
 *~
 bin
+*.swp
+classes
+lib
 releases
 *.jar
 
