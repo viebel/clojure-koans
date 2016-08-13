@@ -3,19 +3,19 @@
 
 (meditations
   "You can use vectors in clojure as array-like structures"
-  (= __ (count [42]))
+  (= 1 (count [42]))
 
   "You can create a vector from a list"
-  (= __ (vec '(1)))
+  (= [1] (vec '(1)))
 
   "Or from some elements"
-  (= __ (vector nil nil))
+  (= [nil nil] (vector nil nil))
 
   "But you can populate it with any number of elements at once"
   (= [1 2] (vec '(1 2)))
 
   "Conjoining to a vector is different than to a list"
-  (= __ (conj [111 222] 333))
+  (= [111 222 333] (conj [111 222] 333))
 
   "You can get the first element of a vector like so"
   (= :peanut (first [:peanut :butter :and :jelly]))
